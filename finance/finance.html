@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Yeseva+One&display=swap" rel="stylesheet">
+    <title>finance</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="" class="logo__img" height="50px" width="50px">
+                <h4>FinAcademyConnect</h4>
+            </a>
+            <nav class="menu header__menu">
+                <button class="menu__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="menu__list header__menu-list">
+                    <li class="menu__list-item">
+                        <a href="" class="menu__list_link">Финансы</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="../warehouse/warehouse.html" class="menu__list_link">Склад</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="../project/project.html" class="menu__list_link">Проекты</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="../archive/archive.html" class="menu__list_link">Архив</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="../login/login.html" class="sign">Вход</a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <section class="top">
+                <div class="block" onclick="toggleDisplay(this, 'table1')">Просмотр</div>
+                <div class="block" onclick="toggleDisplay(this, 'form-add')">Добавить</div>
+                <div class="block" onclick="toggleDisplay(this, 'form-change')">Изменить</div>
+            </section>
+        </div>
+        <div id="table1" class="data-table finance-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Наименование</th>
+                        <th>Дата</th>
+                        <th>Тип</th>
+                        <th>Сумма</th>
+                        <th>Категория</th>
+                        <th>Товары</th>
+                        <th>Статус</th>
+                        <th>Отвественный</th>
+                        <th>Краткое описание</th>
+                        <th>Валюта</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Строительство нового корпуса</td>
+                        <td>10.02.2023</td>
+                        <td>Капитальный ремонт</td>
+                        <td>5 000 000</td>
+                        <td>Инфраструктура</td>
+                        <td>Проведение строительных работ по возведению нового корпуса военной академии.</td>
+                        <td>В процессе</td>
+                        <td>Иванов И.И.</td>
+                        <td>Строительство нового корпуса для улучшения образовательной инфраструктуры.</td>
+                        <td>Рубли</td>
+                    </tr>
+                    <tr>
+                        <td>Покупка нового оборудования</td>
+                        <td>25.05.2023</td>
+                        <td>Закупка</td>
+                        <td>2 500 000</td>
+                        <td>Образование</td>
+                        <td>Приобретение современного оборудования для улучшения образовательного процесса в академии.</td>
+                        <td>Одобрено</td>
+                        <td>Петров П.П.</td>
+                        <td>Закупка оборудования для повышения эффективности учебного процесса.</td>
+                        <td>Доллары</td>
+                    </tr>
+                    <tr>
+                        <td>Обновление компьютерной лаборатории</td>
+                        <td>08.09.2023</td>
+                        <td>Обновление оборудования</td>
+                        <td>1 200 000</td>
+                        <td>Наука и исследования</td>
+                        <td>Замена старого компьютерного оборудования в лаборатории для поддержки научных исследований студентов и преподавателей.</td>
+                        <td>Планируется</td>
+                        <td>Сидоров С.С.</td>
+                        <td>Обновление технической базы для поддержки научных исследований.</td>
+                        <td>Евро</td>
+                    </tr>
+                    <tr>
+                        <td>Проведение учебных мероприятий</td>
+                        <td>20.11.2023</td>
+                        <td>Организация мероприятий</td>
+                        <td>800 000</td>
+                        <td>Образование</td>
+                        <td>Организация и проведение учебных семинаров и конференций для студентов и преподавателей.</td>
+                        <td>В процессе</td>
+                        <td>Козлов К.К.</td>
+                        <td>Проведение мероприятий для повышения уровня знаний и навыков студентов.</td>
+                        <td>Рубли</td>
+                    </tr>
+                    
+                </tbody>
+                
+            </table>
+        </div>
+        <div class="form-add" id="form-add">
+            <form action="" class="form">
+                <p>
+                    <input type="text" class="form__input" id="name" placeholder="Имя">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="dateTransaction" placeholder="Дата операции">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="type" placeholder="Тип операции">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="total" placeholder="Сумма операции">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="category" placeholder="Категория операции">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="products" placeholder="Товары">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="status" placeholder="Статус операции">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="employee" placeholder="Отвественный">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="description" placeholder="Краткое описание">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="infoCurrency" placeholder="Валюта">
+                </p>
+                <button class="send-btn">Отправить</button>
+            </form>
+        </div>
+        <div class="form-change" id="form-change">
+            <form action="" class="form">
+                <p>
+                    <input type="text" class="form__input" id="idFinance" placeholder="Номер операции">
+                    <button class="findIdFinance-btn">Найти</button>
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="name" placeholder="Имя">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="dateTransaction" placeholder="Дата операции">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="type" placeholder="Тип операции">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="total" placeholder="Сумма операции">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="category" placeholder="Категория операции">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="products" placeholder="Товары">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="status" placeholder="Статус операции">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="employee" placeholder="Отвественный">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="description" placeholder="Краткое описание">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="infoCurrency" placeholder="Валюта">
+                </p>
+            </form>
+            <button class="change-btn">Изменить</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <a href="" class="logo">
+                <img src="../images/logo.png" alt="" class="logo__img" height="50px" width="50px">
+            </a>
+            <div class="footer__contacts">
+                <a href="" class="phone">+x-xxx-xxx-xxxx</a>
+                <a href="" class="email">example@example.com</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,377 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+body{
+    color: #000;
+    background-color: #03a9f4;
+    font-family: 'Comfortaa', sans-serif;
+    /* font-family: 'Yeseva One', serif; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container{
+    max-width: 1160px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+}
+
+.menu__btn{
+    display: none;
+    width: 30px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu__btn span{
+    height: 1px;
+    background-color: #333;
+    width: 100%;
+}
+
+header{
+    background-color: #03a9f4;
+}
+
+.header__inner{
+    padding-top: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex; 
+    align-items: center;
+}
+
+h4{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.menu__list{
+    display: flex;
+    gap: 20px;
+}
+
+.menu__list_link{
+    text-transform: uppercase;
+}
+
+.sign{
+    position: relative;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block {
+    float: left;
+    line-height: 190px;
+    width: 200px;
+    height: 200px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px; 
+    margin: 10px;
+    margin-top: 200px;
+    transition: margin-top 0.3s, height 0.3s;
+}
+
+.block:hover {
+    background-color: #c0c0c0;
+}
+
+.data-table {
+    display: none;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.data-table th, .data-table td {
+    padding: 12px;
+    text-align: left;
+    width: 600px;
+    border-bottom: 1px solid #ddd;
+}
+
+.data-table th {
+    background-color: #635e5e;
+    color: white;
+}
+
+.form-add{
+    background-color: #fff;
+    height: 100%;
+    width: 500px;
+    margin-left: 650px;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.25);
+}
+
+.form{
+    width: 100%;
+    padding: 25px;
+    font-size: 16px;
+}
+
+.form__input{
+    width: 100%;
+    padding: 10px;
+    border: solid 1px #333;
+    font-size: inherit;
+}
+
+.form-add{
+    display: none;
+}
+
+.send-btn{
+    margin-left: auto;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    border: none;
+    background-color: #03a9f4;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.form-change{
+    display: none;
+    background-color: #fff;
+    height: 100%;
+    width: 500px;
+    margin-left: 650px;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.25);
+}
+
+.change-btn{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    border: none;
+    background-color: #03a9f4;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.findIdFinance-btn{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    border: none;
+    background-color: #03a9f4;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    margin-top: 50px;
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__contacts{
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+}
+
+.email{
+    margin: 17px 0;
+}
+
+
+@media (max-width: 1450px){
+    .form-add{
+        margin-left: 450px;
+    }
+    .form-change{
+        margin-left: 450px;
+    }
+}
+
+@media (max-width: 1000px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .form-add{
+        margin-left: 250px;
+    }
+    .form-change{
+        margin-left: 250px;
+    }
+    .send-btn{
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 850px){
+    .form-add{
+        margin-left: auto;
+    }
+    .form-change{
+        margin-left: auto;
+    }
+    .send-btn{
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 768px){
+    body{
+        font-size: 10px;
+    }
+    .container{
+        max-width: 640px;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .block{
+        margin-top: 10px;
+    }
+    .data-table{
+        margin-left: 0px;
+    }
+    .form-add{
+        margin-left: auto;
+    }
+    .form-change{
+        margin-left: auto;
+    }
+    .findIdFinance-btn{
+        margin-left: auto;
+    }
+    .change-btn{
+        margin-left: auto;
+    }
+    .send-btn{
+        margin-left: auto;
+    }
+    .data-table{
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 640px){
+    .container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .header__menu-list{
+        width: 153px;
+        background-color: #0782ba;
+        color: #fff8f3;
+        flex-direction: column;
+        gap: 20px 0;
+        padding: 25px 35px 25px 45px;
+        position: absolute;
+        right: 0;
+        top: 50px;
+        transform: translateY(-200%);
+        transition: transform .5s ease;
+        z-index: 5;
+    }
+
+    .header__menu-list.menu--open{
+        transform: translateX(0%);
+    }
+
+    .menu__btn{
+        display: flex;
+    }
+    .header__menu{
+        order: 1;
+    }
+    .form-add{
+        margin-left: auto;
+    }
+    .form-change{
+        margin-left: auto;
+    }
+    .findIdFinance-btn{
+        margin-left: auto;
+    }
+    .change-btn{
+        margin-left: auto;
+    }
+    .send-btn{
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 340px){
+    .footer__inner{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer{
+        position: inherit;
+        padding: 50px 0;
+        font-size: 14px;
+    }
+    .form-add{
+        margin-left: auto;
+    }
+    .form-change{
+        margin-left: auto;
+    }
+    .findIdFinance-btn{
+        margin-left: auto;
+    }
+    .change-btn{
+        margin-left: auto;
+    }
+    .send-btn{
+        margin-left: auto;
+    }
+}

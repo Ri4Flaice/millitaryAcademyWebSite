@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Yeseva+One&display=swap" rel="stylesheet">
+    <title>warehouse</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="" class="logo__img" height="50px" width="50px">
+                <h4>FinAcademyConnect</h4>
+            </a>
+            <nav class="menu header__menu">
+                <button class="menu__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="menu__list header__menu-list">
+                    <li class="menu__list-item">
+                        <a href="../finance/finance.html" class="menu__list_link">Финансы</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="../warehouse/warehouse.html" class="menu__list_link">Склад</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="" class="menu__list_link">Проекты</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="../archive/archive.html" class="menu__list_link">Архив</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="../login/login.html" class="sign">Вход</a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <section class="top">
+                <div class="block" onclick="toggleDisplay(this, 'table1')">Просмотр</div>
+                <div class="block" onclick="toggleDisplay(this, 'form-add')">Добавить</div>
+                <div class="block" onclick="toggleDisplay(this, 'form-change')">Изменить</div>
+            </section>
+        </div>
+        <div id="table1" class="data-table project-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Наименование проекта</th>
+                        <th>Краткое описание проекта</th>
+                        <th>Дата начала проекта</th>
+                        <th>Дата конца проекта</th>
+                        <th>Отвественный</th>
+                        <th>Наименование операции</th>
+                        <th>Результат</th>
+                        <th>Статус</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Разработка нового типа боевого вертолета</td>
+                        <td>Создание высокоманевренного вертолета с новейшим вооружением</td>
+                        <td>2023-02-01</td>
+                        <td>2024-05-15</td>
+                        <td>Генерал Михайлов</td>
+                        <td>Исследование и разработка</td>
+                        <td>Успешное прохождение испытаний прототипа</td>
+                        <td>Завершен</td>
+                    </tr>
+                    <tr>
+                        <td>Модернизация системы ПВО на военной базе</td>
+                        <td>Улучшение системы противовоздушной обороны для повышения эффективности</td>
+                        <td>2023-04-10</td>
+                        <td>2023-12-20</td>
+                        <td>Полковник Захаров</td>
+                        <td>Установка новых радаров и ЗРК</td>
+                        <td>Успешное завершение модернизации</td>
+                        <td>Завершен</td>
+                    </tr>
+                    <tr>
+                        <td>Обучение военнослужащих новым тактикам боевых действий</td>
+                        <td>Проведение тренингов и учений для повышения боевой готовности</td>
+                        <td>2023-06-05</td>
+                        <td>2023-08-15</td>
+                        <td>Генерал Лебедев</td>
+                        <td>Проведение учебных сценариев</td>
+                        <td>Эффективное подготовка военнослужащих</td>
+                        <td>В процессе</td>
+                    </tr>
+                    <tr>
+                        <td>Разработка нового вида автоматического оружия</td>
+                        <td>Создание легкого и компактного автомата с улучшенными характеристиками</td>
+                        <td>2023-09-01</td>
+                        <td>2024-03-20</td>
+                        <td>Капитан Соколов</td>
+                        <td>Инженерные работы и тестирование</td>
+                        <td>Одобрение нового оружия на высшем уровне</td>
+                        <td>В процессе</td>
+                    </tr>
+                    <tr>
+                        <td>Строительство нового военного объекта</td>
+                        <td>Создание современного объекта для обеспечения безопасности страны</td>
+                        <td>2024-01-10</td>
+                        <td>2025-06-30</td>
+                        <td>Майор Иванова</td>
+                        <td>Строительные работы и оборудование</td>
+                        <td>Завершение строительства по графику</td>
+                        <td>Планируется</td>
+                    </tr>
+                    <tr>
+                        <td>Строительство нового военного объекта</td>
+                        <td>Создание современного объекта для обеспечения безопасности страны</td>
+                        <td>2024-01-10</td>
+                        <td>2025-06-30</td>
+                        <td>Майор Иванова</td>
+                        <td>Строительные работы и оборудование</td>
+                        <td>Завершение строительства по графику</td>
+                        <td>Планируется</td>
+                    </tr>
+                </tbody>                
+            </table>
+        </div>
+        <div class="form-add" id="form-add">
+            <form action="" class="form">
+                <p>
+                    <input type="text" class="form__input" id="name" placeholder="Имя">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="description" placeholder="Краткое описание">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="dateStart" placeholder="Дата начала проекта">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="dateEnd" placeholder="Дата конца проекта">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="employee" placeholder="Отвественный">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="nameOperation" placeholder="Наименование операции">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="result" placeholder="Результат">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="status" placeholder="Статус">
+                </p>
+                <button class="send-btn">Отправить</button>
+            </form>
+        </div>
+        <div class="form-change" id="form-change">
+            <form action="" class="form">
+                <p>
+                    <input type="text" class="form__input" id="idProject" placeholder="Номер проекта">
+                    <button class="findIdFinance-btn">Найти</button>
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="name" placeholder="Имя">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="description" placeholder="Краткое описание">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="dateStart" placeholder="Дата начала проекта">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="dateEnd" placeholder="Дата конца проекта">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="employee" placeholder="Отвественный">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="nameOperation" placeholder="Наименование операции">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="result" placeholder="Результат">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="status" placeholder="Статус">
+                </p>
+            </form>
+            <button class="change-btn">Изменить</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <a href="" class="logo">
+                <img src="../images/logo.png" alt="" class="logo__img" height="50px" width="50px">
+            </a>
+            <div class="footer__contacts">
+                <a href="" class="phone">+x-xxx-xxx-xxxx</a>
+                <a href="" class="email">example@example.com</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

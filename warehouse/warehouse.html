@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Yeseva+One&display=swap" rel="stylesheet">
+    <title>warehouse</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="" class="logo__img" height="50px" width="50px">
+                <h4>FinAcademyConnect</h4>
+            </a>
+            <nav class="menu header__menu">
+                <button class="menu__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="menu__list header__menu-list">
+                    <li class="menu__list-item">
+                        <a href="../finance/finance.html" class="menu__list_link">Финансы</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="" class="menu__list_link">Склад</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="../project/project.html" class="menu__list_link">Проекты</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="../archive/archive.html" class="menu__list_link">Архив</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="../login/login.html" class="sign">Вход</a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <section class="top">
+                <div class="block" onclick="toggleDisplay(this, 'table1')">Просмотр</div>
+                <div class="block" onclick="toggleDisplay(this, 'form-add')">Добавить</div>
+                <div class="block" onclick="toggleDisplay(this, 'form-change')">Изменить</div>
+            </section>
+        </div>
+        <div id="table1" class="data-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Наименование</th>
+                        <th>Наименование операции</th>
+                        <th>Категория</th>
+                        <th>Статус</th>
+                        <th>Дата</th>
+                        <th>Поставщик</th>
+                        <th>Отвественный</th>
+                        <th>Местоположение</th>
+                        <th>Краткое описание</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Танк T-90</td>
+                        <td>Техническое обслуживание</td>
+                        <td>Боевая техника</td>
+                        <td>В работе</td>
+                        <td>2023-03-15</td>
+                        <td>ОАО "Уралвагонзавод"</td>
+                        <td>Капитан Иванов</td>
+                        <td>Автобаза №3</td>
+                        <td>Регулярное техническое обслуживание танка</td>
+                    </tr>
+                    <tr>
+                        <td>Авиабомба FAB-500</td>
+                        <td>Зарядка и подготовка к боевому применению</td>
+                        <td>Авиационное вооружение</td>
+                        <td>Готово к использованию</td>
+                        <td>2023-04-02</td>
+                        <td>Государственный арсенал</td>
+                        <td>Полковник Сидоров</td>
+                        <td>Авиабаза "Альфа"</td>
+                        <td>Подготовка бомбы к возможному боевому применению</td>
+                    </tr>
+                    <tr>
+                        <td>Полевой госпитальный комплекс</td>
+                        <td>Инспекция и ремонт</td>
+                        <td>Медицинское оборудование</td>
+                        <td>На обслуживании</td>
+                        <td>2023-05-10</td>
+                        <td>Медтехника ООО</td>
+                        <td>Майор Петров</td>
+                        <td>База медицинского обслуживания</td>
+                        <td>Регламентные работы по техническому обслуживанию</td>
+                    </tr>
+                    <tr>
+                        <td>ПТУР "Корнет"</td>
+                        <td>Проверка систем наведения</td>
+                        <td>Противотанковое вооружение</td>
+                        <td>Готово к использованию</td>
+                        <td>2023-06-20</td>
+                        <td>КБП "Точмаш"</td>
+                        <td>Капитан Лебедев</td>
+                        <td>Тренировочное поле №7</td>
+                        <td>Проверка и настройка систем управления и наведения</td>
+                    </tr>
+                    <tr>
+                        <td>Радиостанция R-168-25У</td>
+                        <td>Обновление программного обеспечения</td>
+                        <td>Связь и навигация</td>
+                        <td>В работе</td>
+                        <td>2023-07-12</td>
+                        <td>Росэлектроника</td>
+                        <td>Лейтенант Смирнов</td>
+                        <td>Командный пункт</td>
+                        <td>Обновление ПО для улучшения функциональности</td>
+                    </tr>
+                    <tr>
+                        <td>Радиостанция R-168-25У</td>
+                        <td>Обновление программного обеспечения</td>
+                        <td>Связь и навигация</td>
+                        <td>В работе</td>
+                        <td>2023-07-12</td>
+                        <td>Росэлектроника</td>
+                        <td>Лейтенант Смирнов</td>
+                        <td>Командный пункт</td>
+                        <td>Обновление ПО для улучшения функциональности</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </div>
+        <div class="form-add" id="form-add">
+            <form action="" class="form">
+                <p>
+                    <input type="text" class="form__input" id="name" placeholder="Имя">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="nameOperation" placeholder="Наименование">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="category" placeholder="Категория">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="status" placeholder="Статус">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="dateTransaction" placeholder="Дата ">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="supplier" placeholder="Поставщик">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="employee" placeholder="Отвественный">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="location" placeholder="Местоположение">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="description" placeholder="Краткое описание">
+                </p>
+                <button class="send-btn">Отправить</button>
+            </form>
+        </div>
+        <div class="form-change" id="form-change">
+            <form action="" class="form">
+                <p>
+                    <input type="text" class="form__input" id="idEquipment" placeholder="Номер оборудования">
+                    <button class="findIdFinance-btn">Найти</button>
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="name" placeholder="Имя">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="nameOperation" placeholder="Наименование">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="category" placeholder="Категория">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="status" placeholder="Статус">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="dateTransaction" placeholder="Дата">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="supplier" placeholder="Поставщик">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="employee" placeholder="Отвественный">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="location" placeholder="Местоположение">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="description" placeholder="Краткое описание">
+                </p>
+            </form>
+            <button class="change-btn">Изменить</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <a href="" class="logo">
+                <img src="../images/logo.png" alt="" class="logo__img" height="50px" width="50px">
+            </a>
+            <div class="footer__contacts">
+                <a href="" class="phone">+x-xxx-xxx-xxxx</a>
+                <a href="" class="email">example@example.com</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

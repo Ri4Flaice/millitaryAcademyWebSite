@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Yeseva+One&display=swap" rel="stylesheet">
+    <title>warehouse</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="" class="logo__img" height="50px" width="50px">
+                <h4>FinAcademyConnect</h4>
+            </a>
+            <nav class="menu header__menu">
+                <button class="menu__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="menu__list header__menu-list">
+                    <li class="menu__list-item">
+                        <a href="../finance/finance.html" class="menu__list_link">Финансы</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="../warehouse/warehouse.html" class="menu__list_link">Склад</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="../project/project.html" class="menu__list_link">Проекты</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="" class="menu__list_link">Архив</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="../login/login.html" class="sign">Вход</a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <section class="top">
+                <div class="block" onclick="toggleDisplay(this, 'table1')">Просмотр</div>
+                <div class="block" onclick="toggleDisplay(this, 'form-add')">Добавить</div>
+                <div class="block" onclick="toggleDisplay(this, 'form-change')">Изменить</div>
+            </section>
+        </div>
+        <div id="table1" class="data-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Наименование документа</th>
+                        <th>Тип документа</th>
+                        <th>Местоположение документа</th>
+                        <th>Статус документа</th>
+                        <th>Дата архивации</th>
+                        <th>Отвественный</th>
+                        <th>Наименование операции</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Приказ №123/2023</td>
+                        <td>Внутренний приказ</td>
+                        <td>Архивный отдел</td>
+                        <td>Архивирован</td>
+                        <td>2023-03-20</td>
+                        <td>Подполковник Николаев</td>
+                        <td>Архивация внутреннего приказа</td>
+                    </tr>
+                    <tr>
+                        <td>Техническое задание на разработку</td>
+                        <td>Договор</td>
+                        <td>Отдел проектирования</td>
+                        <td>Активен</td>
+                        <td>2023-04-15</td>
+                        <td>Главный инженер Петров</td>
+                        <td>Согласование и утверждение ТЗ</td>
+                    </tr>
+                    <tr>
+                        <td>Договор на поставку военной техники</td>
+                        <td>Договор</td>
+                        <td>Юридический отдел</td>
+                        <td>Действует</td>
+                        <td>2023-05-10</td>
+                        <td>Юрист Иванова</td>
+                        <td>Подписание договора с поставщиком</td>
+                    </tr>
+                    <tr>
+                        <td>Отчет по результатам учений</td>
+                        <td>Отчет</td>
+                        <td>Отдел оперативного анализа</td>
+                        <td>Готов к рассмотрению</td>
+                        <td>2023-06-25</td>
+                        <td>Майор Сидоров</td>
+                        <td>Подготовка и представление отчета</td>
+                    </tr>
+                    <tr>
+                        <td>Инструкция по эксплуатации боевой техники</td>
+                        <td>Инструкция</td>
+                        <td>Библиотека академии</td>
+                        <td>Активен</td>
+                        <td>2023-07-20</td>
+                        <td>Профессор Инженерных Наук Ковалев</td>
+                        <td>Обновление и переиздание инструкции</td>
+                    </tr>
+                    <tr>
+                        <td>Инструкция по эксплуатации боевой техники</td>
+                        <td>Инструкция</td>
+                        <td>Библиотека академии</td>
+                        <td>Активен</td>
+                        <td>2023-07-20</td>
+                        <td>Профессор Инженерных Наук Ковалев</td>
+                        <td>Обновление и переиздание инструкции</td>
+                    </tr>
+                    <tr>
+                        <td>Инструкция по эксплуатации боевой техники</td>
+                        <td>Инструкция</td>
+                        <td>Библиотека академии</td>
+                        <td>Активен</td>
+                        <td>2023-07-20</td>
+                        <td>Профессор Инженерных Наук Ковалев</td>
+                        <td>Обновление и переиздание инструкции</td>
+                    </tr>
+                </tbody>                
+            </table>
+        </div>
+        <div class="form-add" id="form-add">
+            <form action="" class="form">
+                <p>
+                    <input type="text" class="form__input" id="name" placeholder="Имя">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="type" placeholder="Тип документа">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="total" placeholder="Местоположение">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="status" placeholder="Статус документа">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="dateArchiving" placeholder="Дата архивации">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="employee" placeholder="Отвественный">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="nameOperation" placeholder="Наименование операции">
+                </p>
+                <button class="send-btn">Отправить</button>
+            </form>
+        </div>
+        <div class="form-change" id="form-change">
+            <form action="" class="form">
+                <p>
+                    <input type="text" class="form__input" id="idDocument" placeholder="Номер документа">
+                    <button class="findIdFinance-btn">Найти</button>
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="name" placeholder="Имя">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="type" placeholder="Тип документа">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="total" placeholder="Местоположение">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="status" placeholder="Статус документа">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="dateArchiving" placeholder="Дата архивации">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="employee" placeholder="Отвественный">
+                </p>
+                <p>
+                    <input type="text" class="form__input" id="nameOperation" placeholder="Наименование операции">
+                </p>
+            </form>
+            <button class="change-btn">Изменить</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <a href="" class="logo">
+                <img src="../images/logo.png" alt="" class="logo__img" height="50px" width="50px">
+            </a>
+            <div class="footer__contacts">
+                <a href="" class="phone">+x-xxx-xxx-xxxx</a>
+                <a href="" class="email">example@example.com</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>
