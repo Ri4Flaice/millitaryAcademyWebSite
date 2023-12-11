@@ -12,8 +12,8 @@ html{
 
 body{
     color: #000;
-    background-color: #06b217;
-    font-family: 'Comfortaa', 'Lato', sans-serif;
+    background-color: #ffcc00;
+    font-family: 'Comfortaa', sans-serif;
     /* font-family: 'Yeseva One', serif; */
     font-size: 14px;
     font-style: normal;
@@ -60,7 +60,7 @@ ul {
 }
 
 header{
-    background-color: #06b217;
+    background-color: #ff6666;
 }
 
 .header__inner{
@@ -105,7 +105,7 @@ h4{
     line-height: 190px; /* Высота строки, используемая для центрирования текста */
     width: 200px;
     height: 200px;
-    background-color: #f0f0f0;
+    background-color: #ffcccc;
     color: #333;
     text-align: center;
     cursor: pointer;
@@ -116,7 +116,7 @@ h4{
 }
 
 .block:hover {
-    background-color: #c0c0c0;
+    background-color: #ff9999;
 }
 
 .data-table {
@@ -176,7 +176,7 @@ h4{
     margin-bottom: 10px;
     border-radius: 2px;
     border: none;
-    background-color: #06b217;
+    background-color: #ff6666;
     padding: 10px;
     cursor: pointer;
 }
@@ -195,7 +195,7 @@ h4{
     margin-bottom: 10px;
     border-radius: 2px;
     border: none;
-    background-color: #06b217;
+    background-color: #ff6666;
     padding: 10px;
     cursor: pointer;
 }
@@ -205,7 +205,7 @@ h4{
     margin-bottom: 10px;
     border-radius: 2px;
     border: none;
-    background-color: #06b217;
+    background-color: #ff6666;
     padding: 10px;
     cursor: pointer;
 }
@@ -321,7 +321,7 @@ h4{
     }
     .header__menu-list{
         width: 153px;
-        background-color: #06b217;
+        background-color: #0782ba;
         color: #fff8f3;
         flex-direction: column;
         gap: 20px 0; /* Расстояние между элементами меню по вертикали */
