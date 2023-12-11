@@ -1,10 +1,13 @@
 const menuBtn = document.querySelector('.menu__btn');
 const menuMobile = document.querySelector('.header__menu-list');
 
+// При мобильной версии создавать div с классом menu--open
 menuBtn.addEventListener('click', ()=>{
     menuMobile.classList.toggle('menu--open');
 })
 
+// Создание div с классом move-right
+// Небольшой тайм аут перед переходом на страницу
 function moveFormBox() {
     var formBox = document.getElementById("formBox");
     formBox.classList.toggle("move-right");
@@ -13,37 +16,9 @@ function moveFormBox() {
     }, 1000);
 }
 
-// function animateBlocks(clickedBlock, tableId) {
-//     var allBlocks = document.querySelectorAll('.block');
-//     var dataTable = document.querySelector('.data-table');
-
-//     if (dataTable.style.display === 'none') {
-//         dataTable.style.display = 'table';
-//     } else {
-//         dataTable.style.display = 'none';
-//     }
-
-//     allBlocks.forEach(function (block) {
-//         block.style.marginTop = '50px';
-//         block.style.height = '100px';
-//         block.style.lineHeight = '90px';
-//     });
-
-//     // showTable(tableId)
-// }
-
-// function showTable(tableId) {
-//     var tables = document.querySelectorAll('.data-table');
-    
-//     tables.forEach(function(table) {
-//         if (table.id === tableId) {
-//             table.style.display = 'table';
-//         } else {
-//             table.style.display = 'none';
-//         }
-//     });
-// }
-
+// Правильное отображение элементов на странице
+// Если какой то элемент открыт, другие скрывать с поле зрения
+// В конце задаем новый стиль для блоков
 function toggleDisplay(clickedBlock, elementId) {
     var allBlocks = document.querySelectorAll('.block');
     var table = document.getElementById('table1');

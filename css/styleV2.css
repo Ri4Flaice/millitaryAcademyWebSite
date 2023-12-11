@@ -12,8 +12,8 @@ html{
 
 body{
     color: #000;
-    background-color: #03a9f4;
-    font-family: 'Comfortaa', sans-serif;
+    background-color: #06b217;
+    font-family: 'Comfortaa', 'Lato', sans-serif;
     /* font-family: 'Yeseva One', serif; */
     font-size: 14px;
     font-style: normal;
@@ -60,7 +60,7 @@ ul {
 }
 
 header{
-    background-color: #03a9f4;
+    background-color: #06b217;
 }
 
 .header__inner{
@@ -176,7 +176,7 @@ h4{
     margin-bottom: 10px;
     border-radius: 2px;
     border: none;
-    background-color: #03a9f4;
+    background-color: #06b217;
     padding: 10px;
     cursor: pointer;
 }
@@ -195,7 +195,7 @@ h4{
     margin-bottom: 10px;
     border-radius: 2px;
     border: none;
-    background-color: #03a9f4;
+    background-color: #06b217;
     padding: 10px;
     cursor: pointer;
 }
@@ -205,7 +205,7 @@ h4{
     margin-bottom: 10px;
     border-radius: 2px;
     border: none;
-    background-color: #03a9f4;
+    background-color: #06b217;
     padding: 10px;
     cursor: pointer;
 }
@@ -321,7 +321,7 @@ h4{
     }
     .header__menu-list{
         width: 153px;
-        background-color: #0782ba;
+        background-color: #06b217;
         color: #fff8f3;
         flex-direction: column;
         gap: 20px 0; /* Расстояние между элементами меню по вертикали */

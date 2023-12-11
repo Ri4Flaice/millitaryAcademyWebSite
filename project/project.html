@@ -43,6 +43,9 @@
     </header>
     <main class="main">
         <div class="wrapper">
+            <!--
+                3 блока, которые при нажатии вызывается функции из js файла
+            -->
             <section class="top">
                 <div class="block" onclick="toggleDisplay(this, 'table1')">Просмотр</div>
                 <div class="block" onclick="toggleDisplay(this, 'form-add')">Добавить</div>
@@ -51,8 +54,12 @@
         </div>
         <div id="table1" class="data-table project-table">
             <table>
+                <!--
+                Создание таблицы с данные для примера
+                -->
                 <thead>
                     <tr>
+                        <!--Название колонок-->
                         <th>Наименование проекта</th>
                         <th>Краткое описание проекта</th>
                         <th>Дата начала проекта</th>
@@ -64,6 +71,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <!--Содержимое колонок-->
                     <tr>
                         <td>Разработка нового типа боевого вертолета</td>
                         <td>Создание высокоманевренного вертолета с новейшим вооружением</td>
@@ -128,6 +136,9 @@
             </table>
         </div>
         <div class="form-add" id="form-add">
+            <!--
+                Форма с полями input (placeholder нужен для отображения текста внутри полей)
+            -->
             <form action="" class="form">
                 <p>
                     <input type="text" class="form__input" id="name" placeholder="Имя">

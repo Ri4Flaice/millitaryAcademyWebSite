@@ -1,9 +1,9 @@
 section {
     height: 400px;
-    background-size: cover;
+    background-size: cover; /* Растягивание фона на весь блок */
     background-position: center;
-    display: flex;
-    justify-content: center;
+    display: flex; /* Отображение дочерних элементов в виде флекс-контейнера */
+    justify-content: center; /* Центрирование контента по горизонтали */
     align-items: center;
     text-align: center;
     margin: 20px 0;
@@ -19,5 +19,5 @@ h2 {
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.2em; /* Размер шрифта абзаца */
 }
