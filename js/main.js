@@ -46,3 +46,14 @@ function toggleDisplay(clickedBlock, elementId) {
     });
 }
 
+// Этот скрипт добавляет класс "sticky" к заголовкам таблицы для фиксации при прокрутке
+window.onload = function () {
+    var table = document.getElementById("table1");
+    var header = table.createTHead();
+    var clone = table.cloneNode(true);
+    header.parentNode.removeChild(header);
+    clone.id = "";
+    table.parentNode.insertBefore(clone, table);
+    clone.getElementsByTagName("thead")[0].classList.add("sticky");
+    table.style.marginTop = "-" + table.getElementsByTagName("thead")[0].offsetHeight + "px";
+};
